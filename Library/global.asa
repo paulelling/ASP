@@ -1,0 +1,27 @@
+<SCRIPT LANGUAGE="VBScript" RUNAT="server">
+' Creates and destroys application and session variables.
+
+SUB Application_OnStart
+  ' Root of web server.  Must be set per site.
+  Application("g_WebRoot") = "//"
+	
+  ' Connection string.  Must be set per site.
+  Application("g_ConnString") = ""	
+END SUB
+
+
+SUB Application_OnEnd
+  Application("g_WebRoot") = ""
+  Application("g_ConnString") = ""
+END SUB
+
+
+SUB Session_OnStart
+     
+END SUB
+
+
+SUB Session_OnEnd
+  Session.Abandon()
+END SUB
+</SCRIPT>

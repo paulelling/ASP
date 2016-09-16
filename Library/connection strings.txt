@@ -1,0 +1,14 @@
+SQL Server:
+
+"Provider=SQLOLEDB; Data Source=Tigger; Initial Catalog=pubs; User Id=sa; Password="
+
+
+Access:
+
+via OLE DB:
+
+"Provider=Microsoft.Jet.OLEDB.4.0; Data Source=C:\data\MyDataBase.mdb"
+
+via ODBC:
+
+"Provider=MSDASQL;Driver={Microsoft Access Driver (*.mdb)};DBQ=C:\data\MyDataBase.mdb"
